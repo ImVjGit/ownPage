@@ -1,0 +1,317 @@
+<html>
+<head>
+    <title>Home</title>
+    <style>
+        body {
+            background-color: grey;
+        }
+
+        
+
+        .room {
+            position: absolute;
+            top: 20%;
+            left: 25%;
+            width: 750px;
+            height: 550px;
+            background-color: whitesmoke;
+        }
+
+        .desk {
+            width: 60px;
+            height: 30px;
+            position: absolute;
+            background-color: blanchedalmond;
+        }
+
+        .leg {
+            width: 5px;
+            height: 207px;
+            position: absolute;
+            top: 53.5%;
+            left: 20%;
+            background-color: #805E27;
+            border: 1px solid black;
+        }
+
+        .line {
+            width: 600px;
+            top: 90%;
+            position: absolute;
+            left: 10%;
+
+        }
+        .leg-r
+        {
+            width: 90px;
+            height: 180px;
+            position: absolute;
+            top: 37%;
+            left: 50%;
+            background-color: #805E27;
+            border: 1px solid black;
+        }
+        .topbar{
+            position: absolute;
+            width: 455px;
+            height: 10px;
+            background-color:#805E27;
+            top:51%;
+            left:10%;
+            background-color: #805E27;
+            border: 3px solid black;
+            border-radius: 20px;
+        }
+        .boxone{
+            position: absolute;
+            width: 90px;
+            height: 60px;
+            top: 54%;
+            left: 50%;
+            background-color: #805E27;
+            border: 3px solid black;
+            
+        }
+
+        .boxone .handle{
+            position: absolute;
+            background-color: white;
+            width: 20px;
+            height: 4px;
+            left: 38%;
+            top: 10;
+            border-radius: 10px;
+        }
+        .boxtwo .handle{
+            position: absolute;
+            background-color: white;
+            width: 20px;
+            height: 5px;
+            left: 38%;
+            top: 10;
+            border-radius: 10px;
+        }
+        .boxthree .handle{
+            position: absolute;
+            background-color: white;
+            width: 20px;
+            height: 4px;
+            left: 38%;
+            top: 10;
+            border-radius: 10px;
+        }
+        .boxtwo{
+            position: absolute;
+             top: 66%;
+            left: 50%;
+            width: 90px;
+            height: 60px;
+            background-color: #805E27;
+            border: 3px solid black;
+        }
+        .boxthree{
+            position: absolute;
+             top: 78%;
+            left: 50%;
+            width: 90px;
+            height: 70px;
+            background-color: #805E27;
+            border: 3px solid black;
+        }
+        .computer{
+            position: absolute;
+            width: 120px;
+            height: 80px;
+            background-color: aliceblue;
+            border: 6px solid black;
+            top: 30.5%;
+            left:24%;
+           
+        }
+        .name{
+            width: 20px;
+            height: 30px;
+            animation: zoomName 2s infinite;
+            transform-origin: bottom;
+        }
+        @keyframes zoomName {
+        50%{
+            transform: scale(0.7);
+        }    
+        }
+        .computerLegLeft{
+            position: absolute;
+            width: 38px;
+            background-color: black;
+            height: 5px;
+            top: 49%;
+            left: 28%;
+            transform: rotate(-30deg);
+        }
+        .computerLegright{
+            position: absolute;
+            width: 38px;
+            background-color: black;
+            height: 5px;
+            top: 49%;
+            left: 32%;
+            transform: rotate(30deg);
+        }
+        .pot{
+            position: absolute;
+            clip-path: polygon(47% 38%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+
+            background-color: yellowgreen;
+            width: 70px;
+            height: 90px;
+            top: 75%;
+            left: 78%;
+            border: 1px solid black;
+            border-radius: 30px;
+        }
+        .wallbar
+        {
+            position: absolute;
+            width: 300px;
+            height: 3px;
+            background-color:#805E27;
+            top:20%;
+            left:50%;
+            background-color: #805E27;
+            border: 3px solid black;
+            border-radius: 20px;
+        }
+        .book
+        {
+            position: absolute;
+            width: 15px;
+            height: 62px;
+            top: 8%;
+            left: 50%;
+            background-color: red;
+            border: 3px solid black;
+            transform: rotate(5deg);
+
+        }
+        .book2
+        {
+            position: absolute;
+            width: 15px;
+            height: 62px;
+            top: 8%;
+            left: 53%;
+            background-color: aqua;
+            border: 3px solid black;
+            transform: rotate(5deg);
+
+        }
+        .book3
+        {
+            position: absolute;
+            width: 15px;
+            height: 62px;
+            top: 8%;
+            left: 56%;
+            background-color: yellowgreen;
+            border: 3px solid black;
+            
+
+        }
+        .book4
+        {
+            position: absolute;
+            width: 15px;
+            height: 62px;
+            top: 8%;
+            left: 59%;
+            background-color: red;
+            border: 3px solid black;
+            transform: rotate(-5deg);
+
+        }
+        .bookline1{
+            position: absolute;
+            width: 20px;
+            height: 10px;
+            background-color: black;
+            top: 20%;
+        }
+
+        .cup{
+        position:absolute;
+        width: 20px;
+        height: 30px;
+        background-color: lightcoral;
+        border-bottom: 20px;
+        border: 2px;
+        top: 15%;
+        left: 80%;
+        }
+        .cuphandle{
+            position:absolute;
+        width: 10px;
+        height: 10px;
+        background-color: lightcoral;
+        border-bottom: 20px;
+        border: 2px;
+        top: 17%;
+        left: 82%;
+        border-radius: 100px 80px 90px 100px;
+        border-top: none;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="room">
+        <div class="book">
+            <div class="bookline1"></div>
+        </div>
+        <div class="book2"></div>
+        <div class="book3"></div>
+        <div class="book4"></div>
+        <div class="cup"></div>
+        <div class="cuphandle"></div>
+
+        <div class="wallbar">
+                
+        </div>
+        <div class="computer">
+           <div class="name">
+            <h1>Welcome</h1>
+           </div>
+        </div>
+            <div class="computerLegLeft">
+
+            </div>
+            <div class="computerLegright"></div>
+            <div class="topbar">
+                
+            </div>
+            <div class="leg">
+                
+            </div>
+           
+                <div class="boxone">
+                    <div class="handle"> </div>
+                </div>
+                <div class="boxtwo">
+                    <div class="handle"> </div>
+                </div>
+                <div class="boxthree">
+                    <div class="handle"> </div>
+                </div>
+
+                <div class="pot"></div>
+
+        
+        <div class="line">
+            <hr>
+        </div>
+
+    </div>
+</body>
+
+</html>
